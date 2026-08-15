@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+footer .top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    width: 100%;
+    align-items: start;
+}
+
+footer.top>ul,
+footer.top>div {
+    width: 100%;
+}
+
+footer.top ul h2 {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+footer .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .bottom ul {
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
