@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
 </head>
 
 <body>
@@ -32,18 +33,16 @@
                 <img src="assets/logo.svg" alt="Nike Logo">
             </div>
             <ul class="menuItens">
-                <li><a class="promo" href="#">Nike Promo</a></li>
+                <li><a href="#">Nike Promo</a></li>
                 <li><a href="#">Lançamentos</a></li>
                 <li><a href="#">Masculino</a></li>
                 <li><a href="#">Feminino</a></li>
                 <li><a href="#">Infantil</a></li>
-
+                <li><a href="#">SNKRS</a></li>
             </ul>
             <ul class="icones">
-                <li class="snkrs"><img src="assets/snkrs.svg" alt=""></li>
                 <li><a href="#"><i class="ph ph-heart-straight"></i></a></li>
                 <li><a href="#"><i class="ph ph-bag"></i></a></li>
-
             </ul>
         </nav>
         <div class="bottomBar">
@@ -69,32 +68,32 @@
         <div class="produto">
             <div class="fotos">
                 <div class="grande">
-                    <img src="assets/red-1.jpg" alt="">
+                    <img src="assets/red-1.jpg" alt="" id="fotoGrande">
                 </div>
                 <div class="miniaturas">
-                    <div class="mini">
-                        <img src="assets/thumbs/red-1.jpg" alt="">
+                    <div class="mini" onclick="trocaFoto(1)">
+                        <img src="assets/thumbs/red-1.jpg" alt="" id="aj1">
                     </div>
-                    <div class="mini">
-                        <img src="assets/thumbs/red-2.jpg" alt="">
+                    <div class="mini" onclick="trocaFoto(2)">
+                        <img src="assets/thumbs/red-2.jpg" alt="" id="aj2">
                     </div>
-                    <div class="mini">
-                        <img src="assets/thumbs/red-3.jpg" alt="">
+                    <div class="mini" onclick="trocaFoto(3)">
+                        <img src="assets/thumbs/red-3.jpg" alt="" id="aj3">
                     </div>
-                    <div class="mini">
-                        <img src="assets/thumbs/red-4.jpg" alt="">
+                    <div class="mini" onclick="trocaFoto(4)">
+                        <img src="assets/thumbs/red-4.jpg" alt="" id="aj4">
                     </div>
-                    <div class="mini">
-                        <img src="assets/thumbs/red-5.jpg" alt="">
+                    <div class="mini" onclick="trocaFoto(5)">
+                        <img src="assets/thumbs/red-5.jpg" alt="" id="aj5">
                     </div>
-                    <div class="mini">
-                        <img src="assets/thumbs/red-6.jpg" alt="">
+                    <div class="mini" onclick="trocaFoto(6)">
+                        <img src="assets/thumbs/red-6.jpg" alt="" id="aj6">
                     </div>
-                    <div class="mini">
-                        <img src="assets/thumbs/red-7.jpg" alt="">
+                    <div class="mini" onclick="trocaFoto(7)">
+                        <img src="assets/thumbs/red-7.jpg" alt="" id="aj7">
                     </div>
-                    <div class="mini">
-                        <img src="assets/thumbs/red-8.jpg" alt="">
+                    <div class="mini" onclick="trocaFoto(8)">
+                        <img src="assets/thumbs/red-8.jpg" alt="" id="aj8">
                     </div>
                 </div>
             </div>
@@ -103,26 +102,29 @@
                 <h2>Casual</h2>
                 <div class="classificacao">
                     <div class="estrelas">
-
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star-half"></i>
                     </div>
                     <span class="nota">4.5</span>
                     <p>20 avaliações</p>
                 </div>
                 <div class="preco">
                     <h2>R$ 1.199,00</h2>
-                    <p>ou 10x de R$ 119,90 sem juros</p>
+                    <p>ou <span>10x</span> de <span>R$ 119,90</span> sem juros</p>
                 </div>
             </div>
             <div class="detalhes">
                 <div class="cores">
-
-                    <div class="cor">
+                    <div class="cor ativo" onclick="trocaCor('red')">
                         <img src="assets/red-select.jpg" alt="">
                     </div>
-                    <div class="cor">
+                    <div class="cor" onclick="trocaCor('blue')">
                         <img src="assets/blue-select.jpg" alt="">
                     </div>
-                    <div class="cor">
+                    <div class="cor" onclick="trocaCor('gray')">
                         <img src="assets/gray-select.jpg" alt="">
                     </div>
                 </div>
@@ -162,10 +164,10 @@
                     <label for="50">50</label>
                 </div>
                 <div class="botoes">
-                    <a href="#" class="btnSacola">Adicionar a Sacola</a>
-                    <a href="#" class="btnFavoritos">Adicionar aos Favoritos</a>
+                    <a href="#" class="btnSacola">Adicionar à Sacola</a>
+                    <a href="#" class="btnFavoritos">Adicionar aos Favoritos<i class="ph ph-heart-straight"></i></a>
                 </div>
-                <a href="#" class="share">Compartilhar no WhatsApp</a>
+                <a href="#" class="share">Compartilhar no <i class="ph ph-whatsapp-logo"></i> WhatsApp</a>
                 <div class="sobre">
                     <p>Inspirado no AJ1 original, essa edição cano médio mantém o visual icônico que você ama, enquanto a escolha de cores e o couro conferem uma identidade distinta.</p>
                 </div>
@@ -207,11 +209,11 @@
                 <li>Sobre a Nike, Inc.</li>
                 <li>Sobre o Grupo NBF</li>
             </ul>
-            <ul>
+            <ul class="social">
                 <h4>Redes Sociais</h4>
-                <li>fb</li>
-                <li>ig</li>
-                <li>yt</li>
+                <li><i class="ph-fill ph-facebook-logo"></i></li>
+                <li><i class="ph-fill ph-instagram-logo"></i></li>
+                <li><i class="ph-fill ph-youtube-logo"></i></li>
             </ul>
         </nav>
         <div class="bottom">
@@ -221,7 +223,7 @@
                 <li><a href="#">Termos de Uso</a></li>
             </ul>
             <ul>
-                <li>Nike Air Jordan - Projeto Educacional. Desenvolvido por Flávio Ricardo.</li>
+                <li>Nike Air Jordan - Projeto Educacional. Desenvolvido por Pedro Coutinho.</li>
             </ul>
         </div>
     </footer>
